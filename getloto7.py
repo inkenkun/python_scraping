@@ -2,7 +2,12 @@
 
 import re
 import urllib2
-from BeautifulSoup import BeautifulSoup
+
+# BeautifulSoup ３系を使う場合
+#from BeautifulSoup import BeautifulSoup
+
+# BeautifulSoup ４系を使う場合
+from bs4 import BeautifulSoup
 
 ### UAを設定
 opener = urllib2.build_opener()

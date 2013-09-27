@@ -36,7 +36,7 @@ regdate = regdate.replace(u'日', '')
 #当選番号
 num = []
 for td in table.findAll("td")[1:10]:
-        num.append(re.search(regex, unicode(td)).group(2))
+	num.append(re.search(regex, unicode(td)).group(2))
 
 numX1 = num[7].replace('(', '').replace(')', '');
 numX2 = num[8].replace('(', '').replace(')', '');
